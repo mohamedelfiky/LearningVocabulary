@@ -1,0 +1,36 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.vocabulary.learning.lVoc.fragments.AssignmentResultFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtExamTitle"
+        android:text="@string/exam_complete"
+        android:padding="5dp"
+        android:layout_above="@+id/circularProgressbar"
+        android:layout_centerHorizontal="true"/>
+
+    <ProgressBar
+        android:id="@+id/circularProgressbar"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminate="false"
+        android:layout_centerInParent="true"
+        android:max="70"
+        android:secondaryProgress="100"
+        android:progressDrawable="@drawable/circular" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtExamResult"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

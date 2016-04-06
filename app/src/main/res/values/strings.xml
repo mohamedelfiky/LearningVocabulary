@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LVoc</string>
+    <string name="title_activity_assignment">الإمتحان الأسبوعى</string>
+    <string name="answerQuestion">برجاء إختار الإجابة الصحيحة!</string>
+    <string name="exam_complete">نتيجة الإمتحان الاسبوعى</string>
+    <array name="tabs">
+        <item>LVoc</item>
+        <item>النتايج</item>
+    </array>
+    <string name="btn_next">التالى</string>
+    <string name="btn_close">إنهاء</string>
+    <string name="exam_date">إمتحان </string>
+    <string name="next_exam_date">* يتبقى على الامتحان القادم %1$s أيام ... كن مستعد !!</string>
+    <string name="points">نقاطك</string>
+</resources>
