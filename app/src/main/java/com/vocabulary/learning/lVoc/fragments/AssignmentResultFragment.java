@@ -41,6 +41,6 @@ public class AssignmentResultFragment extends Fragment {
         AssignmentActivity baseActivity = ((AssignmentActivity) getActivity());
         circularProgressbar.setProgress(baseActivity.getScore());
         double percentage = (((double) baseActivity.getScore()) / Exam.FULL_MARK) * 100;
-        txtExamResult.setText(String.format("%1$.2f ", percentage) + "%");
+        txtExamResult.setText(String.format("%s%%", String.format("%1$.2f ", percentage)));
     }
 }

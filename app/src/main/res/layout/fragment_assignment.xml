@@ -2,12 +2,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/activity_bg"
     tools:context="com.vocabulary.learning.lVoc.fragments.AssignmentActivityFragment"
     tools:showIn="@layout/activity_assignment">
     <ImageView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:scaleType="fitXY"
+        android:scaleType="fitEnd"
         android:src="@drawable/results_bg" />
 
     <RelativeLayout

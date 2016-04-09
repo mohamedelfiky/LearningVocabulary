@@ -65,9 +65,7 @@ public class ScoreFragment extends Fragment {
         recyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerview.setAdapter(new ScoreResultsRecyclerAdapter(all));
         totalScore.setText(String.format("%1$.0f", Exam.totalScore(all)));
-        Integer after_days = Exam.getDaysNumberUntilNextExam(getActivity(), all);
+        Integer after_days = Exam.getDaysNumberUntilNextExam(getActivity());
         txtNextExam.setText(String.format(getResources().getString(R.string.next_exam_date), after_days));
     }
-
-
 }

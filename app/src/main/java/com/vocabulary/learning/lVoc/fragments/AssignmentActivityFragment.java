@@ -35,7 +35,7 @@ public class AssignmentActivityFragment extends Fragment {
     RadioGroup grpAnswers;
     @Bind(R.id.txtQuestionNo)
     TextView txtQuestionNo;
-    Dictionary dic;
+    Dictionary vocabulary;
     View view;
 
     public AssignmentActivityFragment() {
@@ -50,12 +50,12 @@ public class AssignmentActivityFragment extends Fragment {
     }
 
     private void loadView() {
-        dic = Dictionary.getQuestionWithAnswers("");
-        txtQuestion.setText(dic.ar);
-        answer_1.setText(dic.answers.get(0));
-        answer_2.setText(dic.answers.get(1));
-        answer_3.setText(dic.answers.get(2));
-        answer_4.setText(dic.answers.get(3));
+        vocabulary = ((AssignmentActivity) getActivity()).getVocabulary();
+        txtQuestion.setText(vocabulary.ar);
+        answer_1.setText(vocabulary.answers.get(0));
+        answer_2.setText(vocabulary.answers.get(1));
+        answer_3.setText(vocabulary.answers.get(2));
+        answer_4.setText(vocabulary.answers.get(3));
         txtQuestionNo.setText((((AssignmentActivity) getActivity()).results.size() + 1) + "/7");
     }
 
@@ -68,7 +68,7 @@ public class AssignmentActivityFragment extends Fragment {
             return null;
         } else {
             RadioButton selected = (RadioButton) view.findViewById(radioButtonID);
-            return selected.getText() == dic.en;
+            return selected.getText() == vocabulary.en;
         }
     }
 }

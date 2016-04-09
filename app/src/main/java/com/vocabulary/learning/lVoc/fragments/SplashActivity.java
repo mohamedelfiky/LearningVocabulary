@@ -8,7 +8,6 @@ import android.view.Menu;
 
 import com.vocabulary.learning.lVoc.R;
 import com.vocabulary.learning.lVoc.managers.LVocNotification;
-import com.vocabulary.learning.lVoc.models.Dictionary;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -19,12 +18,10 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        new LVocNotification(this).schedule(Dictionary.getWord().toString());
-
+        new LVocNotification(this).schedule();
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-
                 Intent i = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(i);
 

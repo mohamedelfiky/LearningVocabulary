@@ -1,13 +1,17 @@
 package com.vocabulary.learning.lVoc.fragments;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
 import com.vocabulary.learning.lVoc.R;
+import com.vocabulary.learning.lVoc.utils.LVoc;
 import com.vocabulary.learning.lVoc.views.adapters.MainActivityPagerAdapter;
 
 import butterknife.Bind;
@@ -36,6 +40,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
+
+        SharedPreferences prefs = getSharedPreferences(LVoc.PACKAGE_NAME, Context.MODE_PRIVATE);
+
+        if (prefs.getInt(LVoc.NOTIFICATION_COUNT, 7) == 1)
+            fab.setVisibility(View.VISIBLE);
+        else
+            fab.setVisibility(View.GONE);
     }
 
     @Override
