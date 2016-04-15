@@ -1,5 +1,5 @@
 # Learning Vocabulary
-A Simple mobile application for learning Engilsh
+A Simple arabic mobile application for learning Engilsh
 
  * Features:
 
