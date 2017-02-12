@@ -19,7 +19,9 @@ A Simple arabic mobile application for learning Engilsh
   <img src="/assets/4-result.jpg" width="200"/>
 </p>
 
+### NOTE
 
+This is just a project for learning purpose, but if you want to use it read further. Code should be considered bad (I'm a backend developer :smile: ). Also its not actively maintained.
 
 
 ### Play Store Sample
